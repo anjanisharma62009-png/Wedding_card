@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>शुभ विवाह - ऐश्वर्या संग राज</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rozha+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #b71c1c; /* Deep Red */
+            --gold: #fbc02d; /* Gold */
+            --cream: #fff9c4; /* Light Yellowish Cream */
+            --text: #3e2723;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cream);
+            color: var(--text);
+            text-align: center;
+            background-image: url('https://www.transparenttextures.com/patterns/wall-4-light.png');
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(rgba(183, 28, 28, 0.9), rgba(183, 28, 28, 0.7)), url('main-couple.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+            border-bottom: 5px solid var(--gold);
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ganesh {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4rem;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            color: var(--gold);
+        }
+
+        .subtitle {
+            font-family: 'Rozha One', serif;
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .date-badge {
+            background-color: var(--gold);
+            color: var(--primary);
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* Quote */
+        .quote {
+            padding: 30px;
+            font-style: italic;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        /* Couple Section */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .couple-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            border: 2px solid var(--gold);
+            border-radius: 15px;
+            padding: 15px;
+            width: 350px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+            border-bottom: 3px solid var(--gold);
+        }
+
+        .card h2 {
+            color: var(--primary);
+            font-family: 'Rozha One', serif;
+            margin-top: 15px;
+        }
+
+        .details {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-top: 10px;
+            color: #555;
+            text-align: left;
+            padding: 0 10px;
+        }
+
+        /* Events */
+        .events {
+            margin: 50px 0;
+            padding: 40px 20px;
+            background-color: #fffde7;
+            border-top: 1px dashed var(--primary);
+            border-bottom: 1px dashed var(--primary);
+        }
+
+        .event-item {
+            background: white;
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 600px;
+            border-radius: 10px;
+            border-left: 5px solid var(--primary);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+
+        .event-icon {
+            font-size: 2rem;
+            margin-right: 20px;
+            color: var(--primary);
+        }
+
+        .event-info h3 {
+            color: var(--primary);
+            margin: 0;
+            font-family: 'Rozha One', serif;
+        }
+
+        /* RSVP Section */
+        .rsvp {
+            background-color: var(--primary);
+            color: white;
+            padding: 40px 20px;
+            margin-top: 30px;
+        }
+        
+        .rsvp p {
+            margin: 5px 0;
+        }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 500px;
+            border: 1px solid var(--gold);
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            h1 { font-size: 3rem; }
+            .card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fade-in">
+        <div class="ganesh">|| श्री गणेशाय नमः ||</div>
+        <div class="subtitle">मधुर निमंत्रण... विश्वकर्मा परिवार का...</div>
+        <h1>ऐश्वर्या & राज</h1>
+        <div class="date-badge">📅 25 फरवरी 2026, बुधवार</div>
+    </header>
+
+    <div class="quote fade-in">
+        "बरसात तो आती है, मगर सावन का आना कुछ और है, <br>
+        मेहमान तो आयेंगे, मगर आपका आना कुछ और है।"
+    </div>
+
+    <div class="container">
+        <h2 style="font-family: 'Great Vibes'; font-size: 2.5rem; color: var(--primary);">परिणय सूत्र</h2>
+        
+        <div class="couple-grid">
+            <div class="card fade-in">
+                <img src="bride.jpg" alt="Aishwarya">
+                <h3>आयु. कु. ऐश्वर्या विश्वकर्मा</h3>
+                <div class="details">
+                    <p><strong>सुपुत्री:</strong> श्रीमती अनीता देवी एवं श्री अजीत विश्वकर्मा</p>
+                    <p><strong>पौत्री:</strong> स्व. श्रीमती कमला देवी एवं स्व. रामजन्म विश्वकर्मा</p>
+                    <p><strong>निवासी:</strong> ग्राम व पोस्ट - सीतापट्टी, जिला - गाजीपुर (उ.प्र.)</p>
+                </div>
+            </div>
+
+            <div class="card fade-in">
+                <img src="groom.jpg" alt="Raj">
+                <h3>चि. राज विश्वकर्मा</h3>
+                <div class="details">
+                    <p><strong>सुपुत्र:</strong> श्रीमती कमला देवी एवं स्व. रामसुन्दर विश्वकर्मा</p>
+                    <p><strong>निवासी:</strong> ग्राम व पोस्ट - महुवारी, जिला - गाजीपुर (उ.प्र.)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="events fade-in">
+        <h2 style="color: var(--primary); font-family: 'Great Vibes'; font-size: 3rem; margin-bottom: 20px;">मांगलिक कार्यक्रम</h2>
+        
+        <div class="event-item">
+            <div class="event-icon">🎉</div>
+            <div class="event-info">
+                <h3>द्वारपूजा</h3>
+                <p>25 फरवरी 2026, बुधवार | सायं</p>
+            </div>
+        </div>
+
+        <div class="event-item">
+            <div class="event-icon">🔥</div>
+            <div class="event-info">
+                <h3>शुभ विवाह</h3>
+                <p>25 फरवरी 2026, बुधवार | रात्रि (लगनानुसार)</p>
+            </div>
+        </div>
+
+        <div class="event-item">
+            <div class="event-icon">🚗</div>
+            <div class="event-info">
+                <h3>विदाई</h3>
+                <p>26 फरवरी 2026, गुरुवार | प्रातः</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="rsvp fade-in">
+        <h2 style="color: var(--gold); font-family: 'Rozha One';">दर्शनाभिलाषी & स्वागतौकांक्षी</h2>
+        <p>संजय विश्वकर्मा, जितेन्द्र, आकाश, संतोष, निखिल विश्वकर्मा</p>
+        <p>एवं समस्त विश्वकर्मा परिवार</p>
+        
+        <div class="contact-box">
+            <h3 style="color: var(--gold); border-bottom: 1px solid var(--gold); padding-bottom: 10px; margin-bottom: 10px;">संपर्क सूत्र</h3>
+            <p><strong>प्रेषक:</strong> अजीत विश्वकर्मा</p>
+            <p>📍 ग्राम व पोस्ट - सीतापट्टी, जिला - गाजीपुर</p>
+            <p>📞 6387254451, 7524839817</p>
+        </div>
+        
+        <p style="font-size: 0.8rem; margin-top: 20px; opacity: 0.7;">Digital Invite Generated by Gemini</p>
+    </div>
+
+</body>
+</html>
